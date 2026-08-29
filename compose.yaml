@@ -2,5 +2,5 @@ services:
   site:
     build: .
     ports:
-      - "${SITE_PORT:-8080}:1111"
+      - "${SITE_PORT:-1111}:1111"
     restart: unless-stopped
