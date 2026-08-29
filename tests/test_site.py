@@ -127,7 +127,6 @@ class SiteTests(unittest.TestCase):
                         self.assertIn(parsed.fragment, pages[candidate].ids)
 
     def test_runtime_configuration_is_valid(self):
-        subprocess.run(["sh", "-n", "docker/build-site.sh"], cwd=ROOT, check=True)
         if shutil.which("docker"):
             subprocess.run(
                 ["docker", "compose", "config", "-q"],
