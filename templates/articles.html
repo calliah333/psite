@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ section.title }}{% endblock title %}
+{% block og_title %}{{ section.title }}{% endblock og_title %}
+{% block heading %}{{ section.title }}{% endblock heading %}
+{% block content %}
+{% for category in config.extra.categories %}
+    <h3 id="{{ category | replace(from=" ", to="_") }}">{{ category }}</h3>
+    <dl>
+        {% for article in section.pages %}
+            {% if article.extra.category == category %}
+            <dt><a href="{{ article.path }}">{{ article.title }}</a></dt>
+            <dd>{{ article.extra.published }}</dd>
+            {% endif %}
+        {% endfor %}
+    </dl>
+{% endfor %}
+{% endblock content %}

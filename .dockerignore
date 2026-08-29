@@ -1,0 +1,6 @@
+.git
+.venv
+public
+__pycache__
+*.pyc
+db.sqlite3

@@ -1,24 +1,5 @@
-calliahsite/migrations
-calliahsite/media
-calliahsite/.env
-calliahsite/markdown
-
-# Django #
-*.log
-*.pot
+.venv/
+public/
+.DS_Store
+__pycache__/
 *.pyc
-__pycache__
-db.sqlite3
-media
-
-# Backup files #
-*.bak
-
-# If you are using PyCharm #
-# User-specific stuff
-.idea/
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf

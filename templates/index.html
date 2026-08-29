@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ section.title }}{% endblock title %}
+{% block og_title %}{{ section.title }}{% endblock og_title %}
+{% block heading %}{{ section.title }}{% endblock heading %}
+{% block content %}
+{% set articles = get_section(path="articles/_index.md") %}
+<aside>
+    <section id="recent_thoughts">
+        <h4>Featured articles:</h4>
+        <ul>
+            {% for article in articles.pages %}
+                {% if article.extra.featured %}<li><a href="{{ article.path }}">{{ article.title }}</a></li>{% endif %}
+            {% endfor %}
+        </ul>
+        <br><br><br>
+    </section>
+</aside>
+{{ section.content | safe }}
+{% endblock content %}

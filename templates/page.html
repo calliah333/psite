@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{% endblock title %}
+{% block og_title %}{{ page.title }}{% endblock og_title %}
+{% block heading %}{{ page.title }}{% endblock heading %}
+{% block content %}{{ page.content | safe }}{% endblock content %}

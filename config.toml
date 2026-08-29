@@ -1,0 +1,23 @@
+base_url = "https://sleepdealer.xyz"
+title = "Sleepdealer's Pharmacy"
+description = "Calliah's personal site and keyboard projects"
+compile_sass = false
+build_search_index = false
+
+[extra]
+categories = ["Technology", "Keyboards", "Misc"]
+header_links = [
+  { name = "Github", url = "https://github.com/calliah333" },
+  { name = "LastFM", url = "/lastfm" },
+  { name = "Steam", url = "https://steamcommunity.com/id/Calliah_/" },
+  { name = "Commission Form", url = "/form" },
+  { name = "Contact", url = "/contact" },
+]
+header_articles = [
+  { name = "Articles", url = "/articles" },
+  { name = "Index", url = "/" },
+  { name = "Portfolio", url = "/article/portfolio" },
+  { name = "About Me", url = "/article/about-me" },
+]
+profile_name = "Lain"
+profile_image = "/media/pfp_lain.jpg"

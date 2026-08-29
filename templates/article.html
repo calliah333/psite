@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{% endblock title %}
+{% block og_title %}{{ page.title }}{% endblock og_title %}
+{% block heading %}{{ page.title }}{% endblock heading %}
+{% block meta %}
+{% if page.description %}<meta property="og:description" content="{{ page.description }}">{% endif %}
+{% if page.extra.embed_img %}<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{{ page.extra.embed_img }}">{% endif %}
+{% endblock meta %}
+{% block content %}
+{% set articles = get_section(path="articles/_index.md") %}
+<aside>
+    <h4>Published: {{ page.extra.published }}</h4>
+    <h4>Updated: {{ page.extra.updated }}</h4>
+    {% if page.toc %}
+    <h5>contents:</h5>
+    <div id="contents">
+        <ul>
+        {% for header in page.toc %}
+            <li><a href="#{{ header.id }}">{{ header.title }}</a>
+            {% if header.children %}
+                <ul>{% for child in header.children %}<li><a href="#{{ child.id }}">{{ child.title }}</a></li>{% endfor %}</ul>
+            {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    <h5>this category:</h5>
+    <ul><li><b><a href="/articles#{{ page.extra.category | replace(from=" ", to="_") }}">{{ page.extra.category }}</a></b></li></ul>
+    <h5>related articles:</h5>
+    <ul>
+        {% for article in articles.pages %}
+            {% if article.path != page.path and article.extra.category == page.extra.category %}
+            <li><a href="{{ article.path }}">{{ article.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    <h5>other categories:</h5>
+    {% for category in config.extra.categories %}
+        {% if category != page.extra.category %}<ul><li><a href="/articles#{{ category | replace(from=" ", to="_") }}">{{ category }}</a></li></ul>{% endif %}
+    {% endfor %}
+</aside>
+{{ page.content | safe }}
+{% endblock content %}

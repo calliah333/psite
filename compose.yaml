@@ -1,0 +1,41 @@
+services:
+  sync:
+    image: calliahsite-sync
+    build: .
+    command:
+      - "--repo=${GIT_REPO:-https://github.com/Sleepdealr/psite}"
+      - "--ref=${GIT_REF:-main}"
+      - "--root=/git/root"
+      - "--link=current"
+      - "--period=${GIT_POLL_PERIOD:-10s}"
+      - "--depth=1"
+      - "--http-bind=:2020"
+      - "--exechook-command=/usr/local/bin/build-site"
+      - "--exechook-timeout=2m"
+    volumes:
+      - site-data:/git
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:2020/"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+    restart: unless-stopped
+
+  site:
+    image: nginx:1.29-alpine
+    command:
+      - /bin/sh
+      - -c
+      - "until [ -f /git/site/index.html ]; do sleep 1; done; exec nginx -g 'daemon off;'"
+    depends_on:
+      sync:
+        condition: service_healthy
+    ports:
+      - "${SITE_PORT:-8080}:1111"
+    volumes:
+      - site-data:/git:ro
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped
+
+volumes:
+  site-data:
