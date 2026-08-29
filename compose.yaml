@@ -3,7 +3,7 @@ services:
     image: calliahsite-sync
     build: .
     command:
-      - "--repo=${GIT_REPO:-https://github.com/Sleepdealr/psite}"
+      - "--repo=${GIT_REPO:-https://github.com/calliah333/psite.git}"
       - "--ref=${GIT_REF:-main}"
       - "--root=/git/root"
       - "--link=current"
