@@ -22,6 +22,6 @@ Mounted with O-rings on the PCB
 
 Geekhack IC link [here](https://geekhack.org/index.php?topic=117933)
 
-![Daal MCU](https://sleepdealer.xyz/media/daal_mcu.jpg)
-![Daal front](https://sleepdealer.xyz/media/daal_front.jpg)
-![Daal name](https://sleepdealer.xyz/media/daal_name.jpg)
+![Daal MCU](https://calliah.xyz/media/daal_mcu.jpg)
+![Daal front](https://calliah.xyz/media/daal_front.jpg)
+![Daal name](https://calliah.xyz/media/daal_name.jpg)

@@ -18,8 +18,8 @@ I make keyboards and keyboard accessories (usually PCBs)
 
 I'm currently getting my bachelors in Computer Science
 
-I'm a huge music fan. Check out my lastfm at <https://sleepdealer.xyz/lastfm>
+I'm a huge music fan. Check out my lastfm at <https://calliah.xyz/lastfm>
 
 I love bunnies!
 
-I program a lot, and most of my code is on [GitHub](https://sleepdealer.xyz/git)
+I program a lot, and most of my code is on [GitHub](https://calliah.xyz/git)

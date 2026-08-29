@@ -20,7 +20,7 @@ I have more in storage but I didn't take photos of them, so they're not included
 
 ## Daal
 
-I worked on this keyboard. You can learn more about it [here](https://sleepdealer.xyz/article/daal)
+I worked on this keyboard. You can learn more about it [here](https://calliah.xyz/article/daal)
 
 Built with hyperglides, plateless, and with DCS 9009 + Vim 
 
@@ -36,21 +36,21 @@ I no longer own this keyboard
 
 I have a plateless build with minks, but I dont use it much
 
-![F2 Front](https://sleepdealer.xyz/media/f2_front.jpg)
-![F2 Back](https://sleepdealer.xyz/media/f2_back.jpg)
+![F2 Front](https://calliah.xyz/media/f2_front.jpg)
+![F2 Back](https://calliah.xyz/media/f2_back.jpg)
 
 ## Evalice
 
-I no longer own this keyboard. I did work on this keyboard, learn more [here](https://sleepdealer.xyz/article/evalice)
+I no longer own this keyboard. I did work on this keyboard, learn more [here](https://calliah.xyz/article/evalice)
 
 - Hyperglides on PC
 - GMK Gregory w/ Spacebar kit
 - PCB by me!
 - Built by bowl
 
-![Evalice Front](https://sleepdealer.xyz/media/evalice_front.jpg)
-![Evalice Back](https://sleepdealer.xyz/media/evalice_back.jpg)
-![Evalice Logo](https://sleepdealer.xyz/media/evalice_front_logo.jpg)
+![Evalice Front](https://calliah.xyz/media/evalice_front.jpg)
+![Evalice Back](https://calliah.xyz/media/evalice_back.jpg)
+![Evalice Logo](https://calliah.xyz/media/evalice_front_logo.jpg)
 
 
 ## Trinity XT
@@ -61,8 +61,8 @@ I no longer have this keyboard
 - GMK WOB + vint relegendables
 - Borrowed from a friend
 
-![Trinity Front](https://sleepdealer.xyz/media/trinity_front.jpg)
-![Trinity Back](https://sleepdealer.xyz/media/trinity_back.jpg)
+![Trinity Front](https://calliah.xyz/media/trinity_front.jpg)
+![Trinity Back](https://calliah.xyz/media/trinity_back.jpg)
 
 ## Raita
 
@@ -73,4 +73,4 @@ I no longer have this keyboard
 
 Have another PCB that I designed, just haven't built it
 
-![Raita](https://sleepdealer.xyz/media/raita.jpg)
+![Raita](https://calliah.xyz/media/raita.jpg)

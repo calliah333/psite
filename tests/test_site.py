@@ -109,7 +109,7 @@ class SiteTests(unittest.TestCase):
                 parsed = urlparse(target)
                 if parsed.scheme in {"mailto", "data"}:
                     continue
-                if parsed.netloc and parsed.netloc != "sleepdealer.xyz":
+                if parsed.netloc and parsed.netloc != "calliah.xyz":
                     continue
                 if not parsed.path and parsed.fragment:
                     candidate = html_path

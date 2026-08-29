@@ -17,6 +17,6 @@ Thanks for visiting my site, I really appreciate it.
 
 ## Keyboards
 
-Portfolio of PCBs I designed: <https://sleepdealer.xyz/article/portfolio>
+Portfolio of PCBs I designed: <https://calliah.xyz/article/portfolio>
 
-Some photos of my keyboard collection: <https://sleepdealer.xyz/article/collection>
+Some photos of my keyboard collection: <https://calliah.xyz/article/collection>

@@ -24,5 +24,5 @@ Geekhack IC link [here](https://geekhack.org/index.php?topic=116187)
 
 Geekhack GB link [here](https://geekhack.org/index.php?topic=117856.0)
 
-![Liberi MCU](https://sleepdealer.xyz/media/liberi_MCU.jpg)
-![Liberi Back](https://sleepdealer.xyz/media/liberi_back.jpg)
+![Liberi MCU](https://calliah.xyz/media/liberi_MCU.jpg)
+![Liberi Back](https://calliah.xyz/media/liberi_back.jpg)

@@ -22,7 +22,7 @@ GB ran in October 2022 in Bowlanci discord
 
 ## PCB Photos
 
-![Evalice Front](https://sleepdealer.xyz/media/evalice_pcb_front.jpg)
-![Evalice Back](https://sleepdealer.xyz/media/evalice_pcb_back.jpg)
-![Evalice Front 2](https://sleepdealer.xyz/media/evalice_pcb_front_rails.jpg)
-![Evalice Back 2](https://sleepdealer.xyz/media/evalice_pcb_back_rails.jpg)
+![Evalice Front](https://calliah.xyz/media/evalice_pcb_front.jpg)
+![Evalice Back](https://calliah.xyz/media/evalice_pcb_back.jpg)
+![Evalice Front 2](https://calliah.xyz/media/evalice_pcb_front_rails.jpg)
+![Evalice Back 2](https://calliah.xyz/media/evalice_pcb_back_rails.jpg)
