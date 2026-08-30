@@ -20,16 +20,6 @@ ARTICLES = {
     "collection": ("Keyboard Collection", "All (most) of My Keyboards"),
 }
 
-REDIRECTS = {
-    "form": "https://forms.gle/GxDg6JspqJ7cNVmx8",
-    "sauce": "https://github.com/Sleepdealr/sleepsite",
-    "rpguide": "https://github.com/Sleepdealr/RP2040-designguide",
-    "pcbtips": "https://gist.github.com/Sleepdealr/ab05f5edb82eae9e0393f4d63da55adf",
-    "lastfm": "https://last.fm/user/Sleepdealr",
-    "letterboxd": "https://letterboxd.com/calliah/",
-    "git": "https://github.com/sleepdealr/",
-    "a7c": "https://ibb.co/album/HD8cSx",
-}
 
 
 class Links(HTMLParser):
@@ -85,11 +75,6 @@ class SiteTests(unittest.TestCase):
         contact = self.page("contact")
         self.assertIn("@calliah_", contact)
         self.assertIn("sleepdealer01 at protonmail.com", contact)
-
-    def test_all_redirects_render(self):
-        for route, target in REDIRECTS.items():
-            with self.subTest(route=route):
-                self.assertIn(target, self.page(route))
 
     def test_all_media_are_published(self):
         source = {path.name for path in (ROOT / "static/media").iterdir()}

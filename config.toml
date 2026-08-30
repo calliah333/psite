@@ -8,9 +8,9 @@ build_search_index = false
 categories = ["Technology", "Keyboards", "Misc"]
 header_links = [
   { name = "Github", url = "https://github.com/calliah333" },
-  { name = "LastFM", url = "/lastfm" },
+  { name = "LastFM", url = "https://last.fm/user/Sleepdealr" },
   { name = "Steam", url = "https://steamcommunity.com/id/Calliah_/" },
-  { name = "Commission Form", url = "/form" },
+  { name = "Commission Form", url = "https://forms.gle/GxDg6JspqJ7cNVmx8" },
   { name = "Contact", url = "/contact" },
 ]
 header_articles = [

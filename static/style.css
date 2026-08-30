@@ -85,6 +85,10 @@ nav a {
     background-color: white;
 }
 
+#content {
+    padding: 0 20px;
+}
+
 article section table {
     font-family: monospace;
 }
