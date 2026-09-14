@@ -16,7 +16,7 @@ embed_img = ""
 
 I make keyboards and keyboard accessories (usually PCBs)
 
-I'm currently getting my bachelors in Computer Science
+I'm currently getting my bachelors in Computer Science and I am an intern at an unnamed company
 
 I'm a huge music fan. Check out my lastfm at <https://calliah.xyz/lastfm>
 
