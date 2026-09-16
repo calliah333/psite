@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/style.css">
     <title>calliah.xyz :: {% block title %}{% endblock title %}</title>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Sleepdealer's Pharmacy :: {% block og_title %}{% endblock og_title %}">
+    <meta property="og:title" content="Calliah :: {% block og_title %}{% endblock og_title %}">
     <meta property="og:url" content="{{ current_url | default(value=config.base_url) }}">
     <meta name="theme-color" content="#FFB6C1">
     {% block meta %}{% endblock meta %}
@@ -35,7 +35,7 @@
                     </ul>
                 </nav>
             </div>
-            <a href="/"><img alt="{{ config.extra.profile_name }}" src="{{ config.extra.profile_image }}" title="My pfp"></a>
+            <a href="/"><img style="width: 200%; height: 200%;" alt="{{ config.extra.profile_name }}" src="{{ config.extra.profile_image }}" title="My pfp"></a>
         </div>
     </header>
     <main id="content">{% block content %}{% endblock content %}</main>

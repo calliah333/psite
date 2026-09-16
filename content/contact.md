@@ -6,4 +6,4 @@ template = "page.html"
 
 Contact me on discord at @calliah_
 
-My email is sleepdealer01 at protonmail.com
+My email is calliah at calliah.xyz
