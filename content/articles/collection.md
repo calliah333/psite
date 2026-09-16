@@ -24,7 +24,7 @@ I worked on this keyboard. You can learn more about it [here](https://calliah.xy
 
 Built with hyperglides, plateless, and with DCS 9009 + Vim 
 
-![Daal Front](https://i.ibb.co/RQDF1dk/Railroad-Fixed-Final-5.png)
+![Daal Front](/media/daal_front.jpg)
 
 ## Geon F2
 

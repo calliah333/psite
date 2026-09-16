@@ -5,12 +5,11 @@ compile_sass = false
 build_search_index = false
 
 [extra]
-categories = ["Technology", "Keyboards", "Misc"]
+categories = ["Keyboards", "Misc"]
 header_links = [
   { name = "Github", url = "https://github.com/calliah333" },
   { name = "LastFM", url = "https://www.last.fm/user/Sleepdealr" },
   { name = "Steam", url = "https://steamcommunity.com/id/Calliah_/" },
-  { name = "Commission Form", url = "/form" },
   { name = "Contact", url = "/contact" },
 ]
 header_articles = [
@@ -19,5 +18,4 @@ header_articles = [
   { name = "Portfolio", url = "/article/portfolio" },
   { name = "About Me", url = "/article/about-me" },
 ]
-profile_name = "Strength"
 profile_image = "/media/strength.png"

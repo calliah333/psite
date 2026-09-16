@@ -2,6 +2,9 @@
 {% block title %}{{ section.title }}{% endblock title %}
 {% block og_title %}{{ section.title }}{% endblock og_title %}
 {% block heading %}{{ section.title }}{% endblock heading %}
+{% block profile %}
+<a href="/" id="profile-link"><img src="{{ config.extra.profile_image }}" title="My pfp" alt="Calliah's profile picture"></a>
+{% endblock profile %}
 {% block content %}
 {% set articles = get_section(path="articles/_index.md") %}
 <aside>
