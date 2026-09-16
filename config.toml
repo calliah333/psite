@@ -10,12 +10,12 @@ header_links = [
   { name = "Github", url = "https://github.com/calliah333" },
   { name = "LastFM", url = "https://www.last.fm/user/Sleepdealr" },
   { name = "Steam", url = "https://steamcommunity.com/id/Calliah_/" },
-  { name = "Contact", url = "/contact" },
+  { name = "Contact", url = "/contact/" },
 ]
 header_articles = [
-  { name = "Articles", url = "/articles" },
+  { name = "Articles", url = "/articles/" },
   { name = "Index", url = "/" },
-  { name = "Portfolio", url = "/article/portfolio" },
-  { name = "About Me", url = "/article/about-me" },
+  { name = "Portfolio", url = "/article/portfolio/" },
+  { name = "About Me", url = "/article/about-me/" },
 ]
 profile_image = "/media/strength.png"
