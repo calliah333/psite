@@ -18,7 +18,7 @@ services:
       - "--exechook-command=/usr/local/bin/build-site"
       - "--exechook-timeout=2m"
     volumes:
-      - site-data:/git
+      - ${SITE_ROOT:-/srv/calliahsite}:/git
     healthcheck:
       test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:2020/"]
       interval: 10s
@@ -26,23 +26,3 @@ services:
       retries: 3
     restart: unless-stopped
 
-  site:
-    image: nginx:1.29-alpine
-    command:
-      - /bin/sh
-      - -c
-      - "until [ -f /git/site/index.html ]; do sleep 1; done; exec nginx -g 'daemon off;'"
-    ports:
-      - "${SITE_PORT:-1111}:1111"
-    volumes:
-      - site-data:/git:ro
-      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    healthcheck:
-      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:1111/"]
-      interval: 30s
-      timeout: 3s
-      retries: 3
-    restart: unless-stopped
-
-volumes:
-  site-data:

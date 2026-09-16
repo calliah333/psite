@@ -151,7 +151,7 @@ sleep 0.02
 
 
 class SyncDeploymentTests(unittest.TestCase):
-    def test_sync_policy_and_healthchecks_are_valid(self):
+    def test_sync_policy_and_caddy_output_are_valid(self):
         if not shutil.which("docker"):
             self.skipTest("docker compose is not installed")
         result = subprocess.run(
@@ -163,14 +163,14 @@ class SyncDeploymentTests(unittest.TestCase):
         )
         config = json.loads(result.stdout)
         sync = config["services"]["sync"]
-        site = config["services"]["site"]
 
         self.assertIn("--period=10s", sync["command"])
         self.assertIn("--max-failures=6", sync["command"])
         self.assertIn("--init-max-failures=6", sync["command"])
         self.assertIn("--exechook-command=/usr/local/bin/build-site", sync["command"])
-        self.assertNotIn("depends_on", site)
-        self.assertIn("healthcheck", site)
+        self.assertNotIn("site", config["services"])
+        self.assertEqual("/srv/calliahsite", sync["volumes"][0]["source"])
+        self.assertEqual("/git", sync["volumes"][0]["target"])
 
     def test_successful_build_hook_publishes_site_and_records_recovery(self):
         with tempfile.TemporaryDirectory() as tempdir:
@@ -197,6 +197,7 @@ class SyncDeploymentTests(unittest.TestCase):
             )
 
             self.assertTrue(site_link.is_symlink())
+            self.assertFalse(Path(os.readlink(site_link)).is_absolute())
             self.assertTrue((site_link / "index.html").is_file())
             self.assertTrue(success_file.is_file())
 
